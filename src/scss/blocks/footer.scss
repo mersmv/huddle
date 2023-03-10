@@ -1,0 +1,61 @@
+@use '../mixins/responsive.scss' as *;
+
+.footer{
+    width: 100%;
+    background-color: var(--very-dark-cyan);
+    padding: 50px;
+    color: var(--white);
+    @include responsive (desktop){
+        display: flex;
+        gap: 30px;
+    }
+}
+.info__footer{
+    @include responsive (desktop){
+        width: 35%;
+    }
+}
+
+.logo__footer{
+    width: 150px;
+}
+
+.icon-info{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu{
+    line-height: 40px;
+    margin-top: 40px;
+    @include responsive (desktop){
+        width: 35%;
+        text-align: center;
+        line-height: 50px;
+    }
+}
+
+.icon-container{
+    margin-top: 40px;
+    display: flex;
+    gap: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+}
+
+.rights__text{
+    font-size: 0.5rem;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 220px;
+   
+}
+.flex{
+@include responsive (desktop){
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+}}

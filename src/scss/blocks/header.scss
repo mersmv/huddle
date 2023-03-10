@@ -1,0 +1,99 @@
+@use '../mixins/responsive.scss' as *;
+
+.header{
+    width: 100%;
+    height: 800px;
+    background-image: url('../assets/images/bg-hero-mobile.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include responsive (desktop){
+       height: 500px;
+    }
+}
+
+
+
+.logo__header{
+    width: 150px;
+    @include responsive (desktop){
+        width: 200px;
+    }
+}
+.header__top{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    align-items: center;
+}
+.banner{
+    @include responsive (desktop){
+        display: flex;
+        width: 100%;
+        align-items: center;
+    }
+}
+.buttom__header{
+    display: flex;
+    width: 130px;
+    height: 40px;
+    background-color: var(--very-pale-cyan);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px var(--gayish-blue);
+}
+
+.banner__title{
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 45px;
+    @include responsive (desktop){
+        width: 60%;
+        text-align: start;
+        margin-left: 10%;
+    }
+}
+
+.banner__text{
+    width: 70%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 25px;
+    @include responsive (desktop){
+        width: 60%;
+        text-align: start;
+        margin-left: 10%;
+    }
+}
+
+.banner__buttom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--pink);
+    border-radius: 25px;
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    @include responsive (desktop){
+       margin-left: 10%;
+    }
+}
+
+.banner__photo{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto; 
+    @include responsive (desktop){
+        width: 500px;
+        margin-right: 100px;
+    }
+}
